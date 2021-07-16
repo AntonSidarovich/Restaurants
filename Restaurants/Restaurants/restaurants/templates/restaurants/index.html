@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{title}}</title>
+    </head>
+    <body>
+        <h1>{{title}}</h1>
+        {% for item in restaurants%}
+        <div>
+            <p>{{item.title}}</p>
+            <p>{{item.name}}</p>
+            <p>{{item.describtion}}</p>
+            <p>{{item.pub_date|date:"Y-m-d H:i"}}</p>
+        </div>
+        <hr>
+        {% endfor %}
+    </body>
+</html>
